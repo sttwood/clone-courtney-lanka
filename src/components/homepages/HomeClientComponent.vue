@@ -11,7 +11,7 @@
                 </Slide>
             </Carousel>
             <div class="custom-navigation">
-                <img src="../../assets/svg/Chevron right.svg" @click="nextSlide">
+                <img src="../../assets/svg/Chevron-right.svg" @click="nextSlide">
             </div>
         </div>
 

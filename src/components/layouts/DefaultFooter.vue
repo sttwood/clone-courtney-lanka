@@ -16,7 +16,7 @@ export default {
                     <img src="../../assets/images/logo.png" alt="logo" class="footer-contact-info-logo pb-4">
                     <p>Expertly trained, battle-tested, elite software developers on demand</p>
                     <span class="d-flex align-items-baseline">
-                        <img src="../../assets/svg/contact/Phone enabled.svg" alt="phone-icon" />
+                        <img src="../../assets/svg/contact/Phone.svg" alt="phone-icon" />
                         <p>+94 713249222</p>
                     </span>
                     <span class="d-flex align-items-baseline">
@@ -24,7 +24,7 @@ export default {
                         <p>hello@courtney.lk</p>
                     </span>
                     <span class="d-flex align-items-baseline">
-                        <img src="../../assets/svg/contact/Location on.svg" alt="address-icon" />
+                        <img src="../../assets/svg/contact/Location.svg" alt="address-icon" />
                         <p>
                             Courtney Lanka (Private) Limited
                             <br>Level 35
