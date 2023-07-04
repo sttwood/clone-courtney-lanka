@@ -9,7 +9,7 @@
 
     <div class="homepage-expertise-content row">
         <article class="col">
-            <img src="../../assets/svg/link.svg" alt="dedicated-teams">
+            <img src="@/assets/svg/link.svg" alt="dedicated-teams">
             <div class="homepage-expertise-content-text">
                 <h3>Dedicated Teams</h3>
                 <p>Find your next team member</p>
@@ -17,7 +17,7 @@
         </article>
 
         <article class="col">
-            <img src="../../assets/svg/management.svg" alt="staff-augmentation">
+            <img src="@/assets/svg/management.svg" alt="staff-augmentation">
             <div class="homepage-expertise-content-text">
                 <h3>Staff Augmentation</h3>
                 <p>Build a distributed development team</p>
@@ -25,7 +25,7 @@
         </article>
 
         <article class="col">
-            <img src="../../assets/svg/outsourcing.svg" alt="software-outsourcing">
+            <img src="@/assets/svg/outsourcing.svg" alt="software-outsourcing">
             <div class="homepage-expertise-content-text">
                 <h3>Software Outsourcing</h3>
                 <p>End-to-End Software Development Outsourcing Solutions</p>
@@ -33,7 +33,7 @@
         </article>
 
         <article class="col">
-            <img src="../../assets/svg/world.svg" alt="remote-office">
+            <img src="@/assets/svg/world.svg" alt="remote-office">
             <div class="homepage-expertise-content-text">
                 <h3>Remote Office</h3>
                 <p>Open your own remote development center and grow your business</p>
