@@ -27,6 +27,11 @@
 import { defineComponent, ref } from 'vue';
 import { Carousel, Slide } from 'vue3-carousel';
 
+import ReactSlide from "@/assets/images/react-homepage.png"
+import AngularSlide from "@/assets/images/angular-homepage.png"
+import NextSlide from "@/assets/images/next-homepage.png"
+import NodejsSlide from "@/assets/images/nodejs-homepage.png"
+
 export default defineComponent ({
     components: {
         Carousel,
@@ -59,10 +64,10 @@ export default defineComponent ({
     },
     setup() {
         const carouselTechImages = ref([
-            "../src/assets/images/react-homepage.png",
-            "../src/assets/images/angular-homepage.png",
-            "../src/assets/images/next-homepage.png",
-            "../src/assets/images/nodejs-homepage.png",
+            ReactSlide,
+            AngularSlide,
+            NextSlide,
+            NodejsSlide,
         ]);
 
         return {

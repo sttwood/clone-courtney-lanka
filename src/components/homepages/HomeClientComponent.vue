@@ -22,6 +22,11 @@
 import { defineComponent, ref } from 'vue';
 import { Carousel, Slide } from 'vue3-carousel';
 
+import GoogleSlide from "@/assets/images/Google_logo.png"
+import YoutubeSlide from "@/assets/images/Logo_of_YouTube.png"
+import TwitterSlide from "@/assets/images/Twitter-Logo.png"
+import MsSlide from "@/assets/images/Microsoft_logo.png"
+
 export default defineComponent({
     components: {
         Carousel,
@@ -54,10 +59,10 @@ export default defineComponent({
     },
     setup() {
         const carouselCompanyImages = ref([
-            "../src/assets/images/Google_logo.png",
-            "../src/assets/images/Logo_of_YouTube.png",
-            "../src/assets/images/Twitter-Logo.png",
-            "../src/assets/images/Microsoft_logo.png",
+            GoogleSlide,
+            YoutubeSlide,
+            TwitterSlide,
+            MsSlide,
         ]);
 
         return {

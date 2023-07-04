@@ -49,6 +49,10 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import ArticlesComponent from '@/components/ArticlesComponent.vue';
 import ConsultationComponent from '@/components/ConsultationComponent.vue';
+// Images
+import RequestImg from '@/assets/svg/email.svg'
+import InterviewImg from '@/assets/svg/online-conference.svg'
+import HireImg from '@/assets/svg/handshake-big.svg'
 
 export default {
     name: "HowtostartView",
@@ -61,17 +65,17 @@ export default {
         return {
             servicesData: [
                 {
-                    "imgUrl": '../src/assets/svg/email.svg',
+                    "imgUrl": RequestImg,
                     "title": '01. Request',
                     "desc": 'Tell us more about your requirements and technical needs'
                 },
                 {
-                    "imgUrl": '../src/assets/svg/online-conference.svg',
+                    "imgUrl": InterviewImg,
                     "title": '02. Interview',
                     "desc": 'You interview candidates. Average 2 interviews to hire.'
                 },
                 {
-                    "imgUrl": '../src/assets/svg/handshake-big.svg',
+                    "imgUrl": HireImg,
                     "title": '03. Hire',
                     "desc": 'You choose who to hire, and we handle all the paperwork.'
                 },

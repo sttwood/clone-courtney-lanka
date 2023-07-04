@@ -18,6 +18,29 @@
 
 <script>
 import { defineComponent } from 'vue';
+//Images
+import FrontendImg from "@/assets/svg/frontend.svg"
+import FullstackImg from "@/assets/svg/software-application.svg"
+import UXUIImg from "@/assets/svg/uiux.svg"
+import QAImg from "@/assets/svg/quality.svg"
+import PdImg from "@/assets/svg/idea.svg"
+import DatabaseImg from "@/assets/svg/database.svg"
+import AngularImg from "@/assets/svg/angular_solidBlack.svg"
+import DevOpsImg from "@/assets/svg/technical-support.svg"
+import PHPImg from "@/assets/svg/PHP.svg"
+import WordpressImg from "@/assets/svg/wordpress-logo.svg"
+import MobileImg from "@/assets/svg/phone.svg"
+import AIImg from "@/assets/svg/chip.svg"
+import DatasciImg from "@/assets/svg/data-science.svg"
+import PmImg from "@/assets/svg/scrum.svg"
+import BaImg from "@/assets/svg/analysis.svg"
+import IsImg from "@/assets/svg/padlock.svg"
+import AsImg from "@/assets/svg/security.svg"
+import SolutionImg from "@/assets/svg/networking.svg"
+import TeamleadImg from "@/assets/svg/team-leader.svg"
+import GolangImg from "@/assets/svg/Go-Logo_Black.svg"
+
+
 
 export default defineComponent ({
     data() {
@@ -25,83 +48,83 @@ export default defineComponent ({
             listOfCard: [
                 {
                     "title": "Frontend Engineers",
-                    "svgUrl": "src/assets/svg/frontend.svg"
+                    "svgUrl": FrontendImg
                 },
                 {
                     "title": "Fullstack Engineers",
-                    "svgUrl": "src/assets/svg/software-application.svg"
+                    "svgUrl": FullstackImg
                 },
                 {
-                    "title": "UI/UX Engineers",
-                    "svgUrl": "src/assets/svg/uiux.svg"
+                    "title": "UX/UI Engineers",
+                    "svgUrl": UXUIImg
                 },
                 {
                     "title": "QA Engineers",
-                    "svgUrl": "src/assets/svg/quality.svg"
+                    "svgUrl": QAImg
                 },
                 {
                     "title": "Product Designer",
-                    "svgUrl": "src/assets/svg/idea.svg"
+                    "svgUrl": PdImg
                 },
                 {
                     "title": "Database admin",
-                    "svgUrl": "src/assets/svg/database.svg"
+                    "svgUrl": DatabaseImg
                 },
                 {
                     "title": "Angular Developers",
-                    "svgUrl": "src/assets/svg/angular_solidBlack.svg"
+                    "svgUrl": AngularImg
                 },
                 {
                     "title": "DevOps + DevSecOps Engineers",
-                    "svgUrl": "src/assets/svg/technical-support.svg"
+                    "svgUrl": DevOpsImg
                 },
                 {
                     "title": "PHP Developers",
-                    "svgUrl": "src/assets/svg/PHP.svg"
+                    "svgUrl": PHPImg
                 },
                 {
                     "title": "Wordpress CMS Developers",
-                    "svgUrl": "src/assets/svg/wordpress-logo.svg"
+                    "svgUrl": WordpressImg
                 },
                 {
                     "title": "IOS and Android Developers",
-                    "svgUrl": "src/assets/svg/phone.svg"
+                    "svgUrl": MobileImg
                 },
                 {
                     "title": "AI and ML Engineers Deep Lerning/ Machine Vision / NLP",
-                    "svgUrl": "src/assets/svg/chip.svg"
+                    "svgUrl": AIImg
                 },
                 {
                     "title": "Data Scientist / Data Engineers",
-                    "svgUrl": "src/assets/svg/data-science.svg"
+                    "svgUrl": DatasciImg
                 },
                 {
                     "title": "Project Managers",
-                    "svgUrl": "src/assets/svg/scrum.svg"
+                    "svgUrl": PmImg
                 },
                 {
                     "title": "Business Analyst",
-                    "svgUrl": "src/assets/svg/analysis.svg"
+                    "svgUrl": BaImg
                 },
                 {
-                    "title": "Information Scurity Engineers",
-                    "svgUrl": "src/assets/svg/padlock.svg"
+                    "title": "Information Security Engineers",
+                    "svgUrl": IsImg
                 },
                 {
                     "title": "Application Security Engineers",
-                    "svgUrl": "src/assets/svg/security.svg"
+                    "svgUrl": AsImg
                 },
                 {
                     "title": "Solution Architects",
-                    "svgUrl": "src/assets/svg/networking.svg"
+                    "svgUrl": SolutionImg
                 },
                 {
                     "title": "Tech Leads / Team Leads",
-                    "svgUrl": "src/assets/svg/team-leader.svg"
+                    "svgUrl": TeamleadImg
                 },
                 {
                     "title": "Golang Dev",
-                    "svgUrl": "src/assets/svg/Go-Logo_Black.svg"
+                    "svgUrl": GolangImg
                 },
             ],
         }

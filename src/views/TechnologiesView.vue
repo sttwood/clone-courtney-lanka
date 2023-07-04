@@ -64,6 +64,43 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import TopicComponentVue from '@/components/TopicComponent.vue'
 import ConsultationComponent from '@/components/ConsultationComponent.vue';
+// Images
+import JsImg from "@/assets/images/desktop/technologies/js 1.png"
+import ReactImg from "@/assets/images/desktop/technologies/react_logo 1.png"
+import VueImg from "@/assets/images/desktop/technologies/logo-vuejs-min 1.png"
+import EmberImg from "@/assets/images/desktop/technologies/e-icon 1.png"
+import HtmlImg from "@/assets/images/desktop/technologies/html 1.png"
+import CssImg from "@/assets/images/desktop/technologies/css 1.png"
+import NodejsImg from "@/assets/images/desktop/technologies/2560px-Node.js_logo 1.png"
+import JavaImg from "@/assets/images/desktop/technologies/Java_programming_language_logo 1.png"
+import PythonImg from "@/assets/images/desktop/technologies/Python-Symbol.png"
+import PhpImg from "@/assets/images/desktop/technologies/PHP-logo.png"
+import CsharpImg from "@/assets/images/desktop/technologies/c-sharp-c-logo-02F17714BA-seeklogo 1.png"
+import CplusImg from "@/assets/images/desktop/technologies/1822px-ISO_C++_Logo 1.png"
+import LaravelImg from "@/assets/images/desktop/technologies/laravel-logo 1.png"
+import SymfonyImg from "@/assets/images/desktop/technologies/symfony-logo-png-2 1.png"
+import DjangoImg from "@/assets/images/desktop/technologies/2560px-Django_logo 1.png"
+import ExpressImg from "@/assets/images/desktop/technologies/express.png"
+import SpringImg from "@/assets/images/desktop/technologies/spring.png"
+import IosImg from "@/assets/images/desktop/technologies/iOS-Logo-2013 1.png"
+import ReactNativeImg from "@/assets/images/desktop/technologies/react-native 1.png"
+import FlutterImg from "@/assets/images/desktop/technologies/Google-flutter-logo 1.png"
+import KotlinImg from "@/assets/images/desktop/technologies/Kotlin_logo 1.png"
+import IonicImg from "@/assets/images/desktop/technologies/1280px-Ionic_Logo 1.png"
+import MysqlImg from "@/assets/images/desktop/technologies/MySQL-Logo 1.png"
+import SqlserverImg from "@/assets/images/desktop/technologies/microsoft-sql-server-logo-96AF49E2B3-seeklogo 1.png"
+import PostgreImg from "@/assets/images/desktop/technologies/postgresql-icon-12 1.png"
+import MariadbImg from "@/assets/images/desktop/technologies/mariadb-logo-vert_blue-transparent 1.png"
+import MongodbImg from "@/assets/images/desktop/technologies/mongodb_logo1-76twgcu2dm 1.png"
+import RedisImg from "@/assets/images/desktop/technologies/Redis-Logo 1.png"
+import OracleImg from "@/assets/images/desktop/technologies/Oracle-Logo 1.png"
+import GoImg from "@/assets/images/desktop/technologies/1280px-Go_Logo_Blue 1.png"
+import AngularImg from "@/assets/images/desktop/technologies/angular-logo-icon-png-svg 2.png"
+import AndroidImg from "@/assets/images/desktop/technologies/android_logo_PNG3 1.png"
+import RstudioImg from "@/assets/images/desktop/technologies/r_studio.png"
+import HadoopImg from "@/assets/images/desktop/technologies/hadoop 1.png"
+import PowerbiImg from "@/assets/images/desktop/technologies/power_bi.png"
+import OpencvImg from "@/assets/images/desktop/technologies/OpenCV_logo_black_ 1.png"
 
 export default {
     name: "TechnologiesView",
@@ -139,182 +176,182 @@ export default {
             tabsContents: [
                 {
                     tabID: "javascript",
-                    tabURL: "../src/assets/images/desktop/technologies/js 1.png",
+                    tabURL: JsImg,
                     tabType: ["frontend", "ecommerce"]
                 },
                 {
                     tabID: "react",
-                    tabURL: "../src/assets/images/desktop/technologies/react_logo 1.png",
+                    tabURL: ReactImg,
                     tabType: [ "frontend", "frameworks", "ecommerce" ]
                 },
                 {
                     tabID: "vuejs",
-                    tabURL: "../src/assets/images/desktop/technologies/logo-vuejs-min 1.png",
+                    tabURL: VueImg,
                     tabType: [ "frontend", "frameworks", "ecommerce" ]
                 },
                 {
                     tabID: "ember",
-                    tabURL: "../src/assets/images/desktop/technologies/e-icon 1.png",
+                    tabURL: EmberImg,
                     tabType: [ "frontend", "frameworks" ]
                 },
                 {
                     tabID: "html",
-                    tabURL: "../src/assets/images/desktop/technologies/html 1.png",
+                    tabURL: HtmlImg,
                     tabType: ["frontend", "ecommerce" ]
                 },
                 {
                     tabID: "css",
-                    tabURL: "../src/assets/images/desktop/technologies/css 1.png",
+                    tabURL: CssImg,
                     tabType: ["frontend", "ecommerce" ]
                 },
                 {
                     tabID: "nodejs",
-                    tabURL: "../src/assets/images/desktop/technologies/2560px-Node.js_logo 1.png",
+                    tabURL: NodejsImg,
                     tabType: ["backend", "security", "ecommerce" ]
                 },
                 {
                     tabID: "java",
-                    tabURL: "../src/assets/images/desktop/technologies/Java_programming_language_logo 1.png",
+                    tabURL: JavaImg,
                     tabType: ["backend", "security"]
                 },
                 {
                     tabID: "python",
-                    tabURL: "../src/assets/images/desktop/technologies/Python-Symbol.png",
+                    tabURL: PythonImg,
                     tabType: ["backend", "data-science", "machine-learning", "security" ]
                 },
                 {
                     tabID: "php",
-                    tabURL: "../src/assets/images/desktop/technologies/PHP-logo.png",
+                    tabURL: PhpImg,
                     tabType: ["backend", "security", "ecommerce" ]
                 },
                 {
                     tabID: "csharp",
-                    tabURL: "../src/assets/images/desktop/technologies/c-sharp-c-logo-02F17714BA-seeklogo 1.png",
+                    tabURL: CsharpImg,
                     tabType: [ "backend" ]
                 },
                 {
                     tabID: "cplusplus",
-                    tabURL: "../src/assets/images/desktop/technologies/1822px-ISO_C++_Logo 1.png",
+                    tabURL: CplusImg,
                     tabType: [ "backend" ]
                 },
                 {
                     tabID: "laravel",
-                    tabURL: "../src/assets/images/desktop/technologies/laravel-logo 1.png",
+                    tabURL: LaravelImg,
                     tabType: ["frontend", "frameworks", "cms", "ecommerce" ]
                 },
                 {
                     tabID: "symfony",
-                    tabURL: "../src/assets/images/desktop/technologies/symfony-logo-png-2 1.png",
+                    tabURL: SymfonyImg,
                     tabType: ["backend", "frameworks"]
                 },
                 {
                     tabID: "django",
-                    tabURL: "../src/assets/images/desktop/technologies/2560px-Django_logo 1.png",
+                    tabURL: DjangoImg,
                     tabType: ["backend", "frameworks", "cms"]
                 },
                 {
                     tabID: "expressjs",
-                    tabURL: "../src/assets/images/desktop/technologies/express.png",
+                    tabURL: ExpressImg,
                     tabType: [ "backend", "frameworks", "ecommerce" ]
                 },
                 {
                     tabID: "spring",
-                    tabURL: "../src/assets/images/desktop/technologies/spring.png",
+                    tabURL: SpringImg,
                     tabType: [ "backend", "frameworks" ]
                 },
                 {
                     tabID: "ios",
-                    tabURL: "../src/assets/images/desktop/technologies/iOS-Logo-2013 1.png",
+                    tabURL: IosImg,
                     tabType: ["mobile-app"]
                 },
                 {
                     tabID: "react-native",
-                    tabURL: "../src/assets/images/desktop/technologies/react-native 1.png",
+                    tabURL: ReactNativeImg,
                     tabType: ["frontend", "frameworks", "mobile-app" ]
                 },
                 {
                     tabID: "flutter",
-                    tabURL: "../src/assets/images/desktop/technologies/Google-flutter-logo 1.png",
+                    tabURL: FlutterImg,
                     tabType: [ "frontend", "frameworks", "mobile-app" ]
                 },
                 {
                     tabID: "kotlin",
-                    tabURL: "../src/assets/images/desktop/technologies/Kotlin_logo 1.png",
+                    tabURL: KotlinImg,
                     tabType: [ "frontend", "backend", "frameworks", "mobile-app" ]
                 },
                 {
                     tabID: "ionic",
-                    tabURL: "../src/assets/images/desktop/technologies/1280px-Ionic_Logo 1.png",
+                    tabURL: IonicImg,
                     tabType: [ "frontend", "frameworks", "mobile-app" ]
                 },
                 {
                     tabID: "mysql",
-                    tabURL: "../src/assets/images/desktop/technologies/MySQL-Logo 1.png",
+                    tabURL: MysqlImg,
                     tabType: ["database", "security", "ecommerce" ]
                 },
                 {
                     tabID: "sql-server",
-                    tabURL: "../src/assets/images/desktop/technologies/microsoft-sql-server-logo-96AF49E2B3-seeklogo 1.png",
+                    tabURL: SqlserverImg,
                     tabType: ["database", "ecommerce" ]
                 },
                 {
                     tabID: "postgre-sql",
-                    tabURL: "../src/assets/images/desktop/technologies/postgresql-icon-12 1.png",
+                    tabURL: PostgreImg,
                     tabType: ["database", "ecommerce" ]
                 },
                 {
                     tabID: "mariadb",
-                    tabURL: "../src/assets/images/desktop/technologies/mariadb-logo-vert_blue-transparent 1.png",
+                    tabURL: MariadbImg,
                     tabType: ["database", "ecommerce" ]
                 },
                 {
                     tabID: "mongodb",
-                    tabURL: "../src/assets/images/desktop/technologies/mongodb_logo1-76twgcu2dm 1.png",
+                    tabURL: MongodbImg,
                     tabType: ["database", "ecommerce" ]
                 },
                 {
                     tabID: "redis",
-                    tabURL: "../src/assets/images/desktop/technologies/Redis-Logo 1.png",
+                    tabURL: RedisImg,
                     tabType: ["database", "ecommerce"]
                 },
                 {
                     tabID: "oracle",
-                    tabURL: "../src/assets/images/desktop/technologies/Oracle-Logo 1.png",
+                    tabURL: OracleImg,
                     tabType: ["database", "ecommerce" ]
                 },
                 {
                     tabID: "go",
-                    tabURL: "../src/assets/images/desktop/technologies/1280px-Go_Logo_Blue 1.png",
+                    tabURL: GoImg,
                     tabType: ["backend", "google", "devops", "data-science", "machine-learning"]
                 },
                 {
                     tabID: "angular",
-                    tabURL: "../src/assets/images/desktop/technologies/angular-logo-icon-png-svg 2.png",
+                    tabURL: AngularImg,
                     tabType: [ "frontend", "frameworks", "mobile-app" ]
                 },
                 {
                     tabID: "android",
-                    tabURL: "../src/assets/images/desktop/technologies/android_logo_PNG3 1.png",
+                    tabURL: AndroidImg,
                     tabType: [ "mobile-app" ]
                 },
                 {
                     tabID: "r-studio",
-                    tabURL: "../src/assets/images/desktop/technologies/r_studio.png",
+                    tabURL: RstudioImg,
                     tabType: [ "data-science", "machine-learning" ]
                 },
                 {
                     tabID: "hadoop",
-                    tabURL: "../src/assets/images/desktop/technologies/hadoop 1.png",
+                    tabURL: HadoopImg,
                     tabType: [ "frameworks", "data-science", "machine-learning" ]
                 },
                 {
                     tabID: "power-bi",
-                    tabURL: "../src/assets/images/desktop/technologies/power_bi.png",
+                    tabURL: PowerbiImg,
                     tabType: [ "data-science", "machine-learning" ]
                 },
                 {
                     tabID: "opencv",
-                    tabURL: "../src/assets/images/desktop/technologies/OpenCV_logo_black_ 1.png",
+                    tabURL: OpencvImg,
                     tabType: [ "data-science", "machine-learning" ]
                 },
             ],
