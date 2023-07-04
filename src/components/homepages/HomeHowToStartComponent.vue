@@ -12,7 +12,7 @@
 
         <div class="homepage-process-methods d-flex justify-content-between align-items-baseline mt-4">
             <div class="homepage-process-method">
-                <img class="img-fluid pb-3" alt="you-get" src="../../assets/svg/Group-1.svg" />
+                <img class="img-fluid pb-3" alt="you-get" src="@/assets/svg/Group-1.svg" />
                 <div class="homepage-process-method-title d-flex align-items-baseline">
                     <h2>01</h2>
                     <h3>YOU ASK</h3>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="homepage-process-method">
-                <img class="img-fluid pb-3" alt="we-proceed" src="../../assets/svg/Group.svg" />
+                <img class="img-fluid pb-3" alt="we-proceed" src="@/assets/svg/Group.svg" />
                 <div class="homepage-process-method-title d-flex align-items-baseline">
                     <h2>02</h2>
                     <h3>WE PROCEED</h3>
@@ -28,7 +28,7 @@
             </div>
 
             <div class="homepage-process-method">
-                <img class="img-fluid pb-3" alt="negotiate" src="../../assets/svg/handshake.svg" />
+                <img class="img-fluid pb-3" alt="negotiate" src="@/assets/svg/handshake.svg" />
                 <div class="homepage-process-method-title d-flex align-items-baseline">
                     <h2>03</h2>
                     <h3>NEGOTIATE</h3>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="homepage-process-method">
-                <img class="img-fluid pb-3" alt="you-get" src="../../assets/svg/medal.svg" />
+                <img class="img-fluid pb-3" alt="you-get" src="@/assets/svg/medal.svg" />
                 <div class="homepage-process-method-title d-flex align-items-baseline">
                     <h2>04</h2>
                     <h3>YOU GET</h3>
