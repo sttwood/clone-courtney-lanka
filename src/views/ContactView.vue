@@ -91,15 +91,48 @@
     </section>
 
     <section class="contact-info container-fluid">
-        <div class="row">
+        <div class="row contact-employees">
             <div class="col">
-                Office
+                <div class="contact-info-brand d-flex align-items-center">
+                    <img src="../assets/images/logo.png" alt="">
+                </div>
+                <div class="contact-info-desc">
+                    <h4>Office</h4>
+                    <span>
+                        <p>info@courtney.lk</p>
+                        <p>+94 011 283 744</p>
+                    </span>
+                </div>
             </div>
+
             <div class="col">
-                Vishwa Liyanapathirana
+                <div class="contact-info-img">    
+                </div>
+                <div class="contact-info-desc">
+                    <span class="contact-info-title">
+                        <h4>Vishwa Liyanapathirana</h4>
+                        <p>Human Resources</p>
+                    </span>
+                    <span>
+                        <p>vishwa@courtney.lk</p>
+                        <p>+94 713 249 222</p>
+                    </span>
+                </div>
             </div>
+
             <div class="col">
-                Kasun Perera
+                <div class="contact-info-img">    
+                </div>
+                <div class="contact-info-desc">
+                    <span class="contact-info-title">
+                        <h4>Kasun Perera</h4>
+                        <p>Funder/CEO</p>
+                    </span>
+                    <span>
+                        <p>kasun@courtney.lk</p>
+                        <p>+44 532 82820 9292</p>
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -134,6 +167,7 @@ export default {
     width: 80%;
     padding: 0;
     font-family: 'Poppins';
+    color: #16205F;
 }
 .card {
     color: #16205F;
@@ -154,7 +188,7 @@ export default {
 }
 .consultation-component {
     position: relative;
-    margin-bottom: 93px;
+    margin-bottom: 195px;
 }
 .consultation-component iframe {
     border-radius: 0px 20px 100px 20px;
@@ -257,6 +291,41 @@ textarea {
     opacity: 1;
     width: 16px;
 }
+.contact-info .contact-employees {
+    margin-bottom: 140px;
+}
+.contact-info .contact-employees .contact-info-img, .contact-info-brand {
+    margin-bottom: 54px;
+    max-width: 132px;
+    max-height: 132px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.contact-info .contact-employees .contact-info-img {
+    background: #FFF856;
+}
+.contact-info .contact-employees .contact-info-desc h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact-info .contact-employees .contact-info-desc .contact-info-title h4 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.contact-info .contact-employees .contact-info-desc .contact-info-title p {
+    font-size: 16px;
+    font-size: 600;
+    margin-bottom: 20px;
+}
+.contact-info .contact-employees .contact-info-desc span p {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+.contact-info .contact-employees .contact-info-desc span p:nth-child(2) {
+    font-weight: 600;
+}
+
 @media (max-width: 1600px) {
     .card {
         font-size: 16px;

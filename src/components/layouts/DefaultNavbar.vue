@@ -70,7 +70,11 @@ export default {
                     </ul>
 
                     <div class="navbar-contact d-flex align-items-center">
-                        <button class="btn btn-outline arrow-button d-flex align-items-center">
+                        <button
+                            class="btn btn-outline arrow-button d-flex align-items-center"
+                            data-bs-target="#buildTeamModal"
+                            data-bs-toggle="modal"
+                        >
                             Build a team
                             <span class="arrow"></span>
                         </button>
@@ -81,6 +85,29 @@ export default {
         </div>
         
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="buildTeamModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>Build a team</h1>
+                    <p>We specialize in helping you build a team.</p>
+
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputCompany" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="inputCompany" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Placeholder">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 
@@ -168,6 +195,39 @@ ul .navbar-nav {
 .arrow-button:hover .arrow::before {
     opacity: 1;
     width: 16px;
+}
+.modal-dialog {
+    margin-top: 150px;
+    max-width: 1092px;
+    font-family: 'Poppins';
+}
+.modal-dialog .modal-content {
+    padding: 58px 70px 590px 70px;
+}
+.modal-dialog .modal-content .modal-body {
+    color: #16205F;
+}
+.modal-dialog .modal-content .modal-body h1 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 21px;
+}
+.modal-dialog .modal-content .modal-body p {
+    font-size: 18px;
+    margin: 0;
+}
+.modal-dialog .modal-content .modal-body form label {
+    font-weight: 600;
+}
+.modal-dialog .modal-content .modal-body form input {
+    padding: 20px 8px;
+    font-size: 14px;
+    margin-bottom: 44px;
+    border-radius: 8px;
+    border: 1px solid #C5E0FF;
+}
+.modal-dialog .modal-content .modal-body form .form-control:focus {
+    box-shadow: inset 0 0 0;
 }
 .navbar-toggler {
     border: 0;
