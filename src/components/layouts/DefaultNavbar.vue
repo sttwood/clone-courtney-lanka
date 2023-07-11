@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-md d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
         <div class="container-fluid">
             <!-- LOGO -->
             <router-link to="/" class="navbar-brand">
@@ -93,6 +93,14 @@ export default {
                 <div class="modal-body">
                     <h1>Build a team</h1>
                     <p>We specialize in helping you build a team.</p>
+
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">Option 1</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Option 2</label>
+                    </div>
 
                     <form class="row g-3">
                         <div class="col-md-6">
@@ -214,7 +222,22 @@ ul .navbar-nav {
 }
 .modal-dialog .modal-content .modal-body p {
     font-size: 18px;
-    margin: 0;
+    margin-bottom: 65px;
+}
+.modal-dialog .modal-content .modal-body .btn-group {
+    border-radius: 8px;
+    box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 36px;
+}
+.modal-dialog .modal-content .modal-body .btn-group .btn-outline-primary {
+    color: #848484;
+    border: 0;
+    outline: 0;
+    padding: 15px 80px;
+}
+.modal-dialog .modal-content .modal-body .btn-group input:checked + .btn-outline-primary {
+    background: #F99600;
+    color: #ffffff;
 }
 .modal-dialog .modal-content .modal-body form label {
     font-weight: 600;
@@ -263,19 +286,33 @@ ul .navbar-nav {
     nav {
         font-size: 14px;
     }
-
     .navbar-brand img {
         width: 65%;
     }
-
     .nav-item {
         padding: 0 10px 0 0;
     }
-
     .btn-outline {
         font-size: 12px;
         padding: 3px 6px;
         margin-right: 15px;
+    }
+    .modal-dialog {
+        margin-top: 150px;
+        max-width: 892px;
+    }
+    .modal-dialog .modal-content .modal-body h1 {
+        font-size: 42px;
+    }
+    .modal-dialog .modal-content .modal-body p {
+        font-size: 16px;
+    }
+    .modal-dialog .modal-content .modal-body .btn-group .btn-outline-primary {
+        padding: 12px 60px;
+    }
+    .modal-dialog .modal-content .modal-body form input {
+        padding: 16px 8px;
+        font-size: 14px;
     }
 }
 @media screen and  (max-width: 1014px) {
@@ -296,11 +333,9 @@ ul .navbar-nav {
     nav {
         font-size: 12px;
     }
-
     .nav-item {
         padding: 0 10px 0 0;
     }
-
     .btn-outline {
         font-size: 10px;
         padding: 3px 3px;
@@ -313,8 +348,25 @@ ul .navbar-nav {
         opacity: 1;
         width: 14px;
     }
+        .modal-dialog {
+        margin-top: 150px;
+        max-width: 692px;
+    }
+    .modal-dialog .modal-content .modal-body h1 {
+        font-size: 38px;
+    }
+    .modal-dialog .modal-content .modal-body p {
+        font-size: 14px;
+    }
+    .modal-dialog .modal-content .modal-body .btn-group .btn-outline-primary {
+        padding: 12px 40px;
+    }
+    .modal-dialog .modal-content .modal-body form input {
+        padding: 14px 8px;
+        font-size: 12px;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     /* Styles for the dropdown items */
     .navbar-nav {
         padding-top: 80px;

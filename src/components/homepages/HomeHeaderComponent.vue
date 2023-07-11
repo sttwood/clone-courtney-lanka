@@ -24,7 +24,6 @@
     position: relative;
     margin-top: 30px;
 }
-
 .homepage-header .card {
     max-width: 730px;
     max-height: 584px;
@@ -38,22 +37,18 @@
     transform: translate(0, -50%);
     left: 0;
 }
-
 .homepage-header .card-body {
     padding: 0;
 }
-
 .homepage-header .card-title {
     font-weight: 600;
     font-size: 64px;
     /* line-height: 78px; */
 }
-
 .homepage-header .card-text {
     font-size: 24px;
     /* line-height: 36px; */
 }
-
 @media screen and (max-width: 1400px) {
     .homepage-header img {
         width: 85%;
@@ -73,7 +68,6 @@
         font-size: 20px;
     }
 }
-
 @media screen and (max-width: 1250px) {
     .homepage-header img {
         width: 80%;
@@ -98,7 +92,6 @@
         padding: 10px 25px;
     }
 }
-
 @media screen and (max-width: 1100px) {
     .homepage-header img {
         width: 80%;
@@ -119,7 +112,6 @@
     }
 
 }
-
 @media screen and (max-width: 1050px) {
     .homepage-header img {
         width: 75%;
@@ -140,7 +132,6 @@
     }
 
 }
-
 @media screen and (max-width: 960px) {
     .homepage-header img {
         width: 75%;
@@ -165,7 +156,6 @@
         padding: 10px 25px;
     }
 }
-
 @media screen and (max-width: 880px) {
     .homepage-header img {
         width: 75%;
@@ -190,7 +180,6 @@
         padding: 5px 10px;
     }
 }
-
 /* Arrow button */
 .homepage-header .arrow-button {
     display: flex;
@@ -207,7 +196,6 @@
     font-size: 16px;
     padding: 15px 30px;
 }
-
 .homepage-header .arrow-button .arrow {
     width: 10px;
     height: 10px;
@@ -218,7 +206,6 @@
     margin: 0 10px;
     transition: all .3s ease;
 }
-
 .homepage-header .arrow-button .arrow::before {
     display: block;
     background-color: currentColor;
@@ -233,14 +220,48 @@
     content: "";
     right: 0;
 }
-
 .homepage-header .arrow-button:hover .arrow {
     transform: rotate(-45deg) translate(4px, 4px);
     border-color: text-hover-color;
 }
-
 .homepage-header .arrow-button:hover .arrow::before {
     opacity: 1;
     width: 16px;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .homepage-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage-header .card {
+        color: #16205F;
+        position: static;
+    }
+    .homepage-header .card-body {
+        padding: 0;
+    }
+    .homepage-header .card-title {
+        font-weight: 600;
+        font-size: 64px;
+        /* line-height: 78px; */
+    }
+    .homepage-header .card-text {
+        font-size: 24px;
+        /* line-height: 36px; */
+    }
+    .homepage-header .arrow-button {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    .homepage-header .arrow-button .arrow {
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+    }
+}
+
+
+
 </style>

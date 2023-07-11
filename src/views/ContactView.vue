@@ -136,15 +136,17 @@
             </div>
         </div>
 
-        <div class="row">
-            <h1>Follow us</h1>
-            <span class="row">
-                <span class="col">linkedin</span>
-                <span class="col">facebook</span>
-                <span class="col">instagram</span>
-                <span class="col">twitter</span>
-                <span class="col">youtube</span>
-            </span>
+        <div class="contact-info-socials row">
+            <h1 class="mb-4">Follow us</h1>
+            <div class="row">
+                <span class="col d-flex gap-5">
+                    <img src="../assets/svg/contact/LinkedIn.svg">
+                    <img src="../assets/svg/contact/Facebook.svg">
+                    <img src="../assets/svg/contact/Instagram.svg">
+                    <img src="../assets/svg/contact/Twitter.svg">
+                    <img src="../assets/svg/contact/YouTube.svg">
+                </span>
+            </div>
         </div>
     </section>
 </template>
@@ -291,8 +293,19 @@ textarea {
     opacity: 1;
     width: 16px;
 }
+.contact-info {
+    margin-bottom: 446px;
+}
+.contact-info .contact-info-socials h1 {
+    font-weight: 600;
+    font-size: 46px;
+}
+.contact-info .contact-info-socials div span img {
+    width: 59px;
+    height: auto;
+}
 .contact-info .contact-employees {
-    margin-bottom: 140px;
+    margin-bottom: 150px;
 }
 .contact-info .contact-employees .contact-info-img, .contact-info-brand {
     margin-bottom: 54px;
@@ -315,7 +328,7 @@ textarea {
 }
 .contact-info .contact-employees .contact-info-desc .contact-info-title p {
     font-size: 16px;
-    font-size: 600;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 .contact-info .contact-employees .contact-info-desc span p {
@@ -400,39 +413,54 @@ textarea {
         margin-bottom: 15px;
     }
     .consultation-component .get-consultatuib-card {
-    right: 0;
-}
+        right: 0;
+    }
     .consultation-component iframe {
         height: 700px;
     }
-
     .get-consultatuib-card label {
         font-size: 14px;
     }
-
-    .get-consultatuib-card input,
-    textarea {
+    .get-consultatuib-card input, textarea {
         font-size: 12px;
     }
-
     .get-consultatuib-card textarea {
         font-size: 12px;
         padding: 10px;
     }
-
-    .get-consultatuib-card input,
-    textarea {
+    .get-consultatuib-card input, textarea {
         padding: 10px;
         margin-bottom: 12px;
     }
-
     .form-check-label {
         font-size: 12px;
     }
-
     .card-body {
         max-width: 500px;
         height: 600px;
+    }
+    .contact-info .contact-info-socials h1 {
+        font-size: 42px;
+    }
+    .contact-info .contact-info-socials div span img {
+        width: 50px;
+        height: auto;
+    }
+    .contact-info .contact-employees .contact-info-img, .contact-info-brand {
+        max-width: 112px;
+        max-height: 112px;
+    }
+    .contact-info .contact-employees .contact-info-desc h4 {
+        font-size: 24px;
+    }
+    .contact-info .contact-employees .contact-info-desc .contact-info-title h4 {
+        font-size: 24px;
+    }
+    .contact-info .contact-employees .contact-info-desc .contact-info-title p {
+        font-size: 12px;
+    }
+    .contact-info .contact-employees .contact-info-desc span p {
+        font-size: 20px;
     }
 }
 @media (max-width: 1000px) {
@@ -518,5 +546,12 @@ textarea {
     .arrow-button .arrow {
         width: 10px;
         height: 10px;
+    }
+    .contact-info .contact-info-socials h1 {
+        font-size: 38px;
+    }
+    .contact-info .contact-info-socials div span img {
+        width: 40px;
+        height: auto;
     }
 }</style>
