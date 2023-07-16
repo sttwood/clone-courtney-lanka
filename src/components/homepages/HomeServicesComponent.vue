@@ -1,4 +1,12 @@
 <template>
+    <div class="homepage-head-title">
+        <h5>Solutions</h5>
+        <h2>Software Solutions, with expert software engineering teams</h2>
+        <p>
+            We specialize in helping you build a team of expert developers, testers, and leaders.
+        </p>
+    </div>
+
     <ArticlesComponent :data="servicesData" />
 </template>
 
@@ -42,5 +50,31 @@ export default {
 .homepage-services {
     margin-top: 180px;
     gap: 50px;
+}
+.homepage-services .homepage-head-title {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    .homepage-services.container-fluid {
+        width: 100%;
+        padding: 0 18px;
+    }
+    .homepage-services {
+        flex-direction: column;
+    }
+    .homepage-services .homepage-head-title {
+        display: block;
+        margin-bottom: 69px;
+    }
+    .homepage-services .homepage-head-title h5 {
+        font-size: 22px;
+    }
+    .homepage-services .homepage-head-title h2 {
+        font-size: 36px;
+    }
+    .homepage-services .homepage-head-title p {
+        font-size: 20px;
+    }
 }
 </style>

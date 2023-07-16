@@ -3,7 +3,12 @@
         <img 
             src="../assets/images/desktop/image-connect.png" 
             alt="get-consultation" 
-            class="img-fluid"
+            class="consultation-img-desktop img-fluid"
+        />
+        <img 
+            src="../assets/images/mobile/image-connect-mobile.png" 
+            alt="get-consultation" 
+            class="consultation-img-mobile img-fluid"
         />
     
         <div class="get-consultatuib-card card">
@@ -11,7 +16,7 @@
                 <h1 class="card-title">Connect With Your Next Great Hire Today!</h1>
                 <form>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <label for="company" class="form-label">Company</label>
                             <input
                                 class="form-control"
@@ -20,7 +25,7 @@
                                 type="text"
                             />
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <label for="name" class="form-label">Your Name</label>
                             <input
                                 class="form-control"
@@ -31,7 +36,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <label for="phone_num" class="form-label">Phone Number</label>
                             <input
                                 class="form-control"
@@ -40,7 +45,7 @@
                                 type="text"
                             />
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <label for="email" class="form-label">Email</label>
                             <input
                                 class="form-control"
@@ -95,6 +100,9 @@ export default {
     width: 80%;
     padding: 0;
     font-family: 'Poppins';
+}
+.consultation-img-mobile {
+    display: none;
 }
 .card {
     color: #16205F;
@@ -356,6 +364,68 @@ export default {
     .arrow-button .arrow {
         width: 10px;
         height: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 100%;
+    }
+    .consultation-img-desktop {
+        display: none;
+    }
+    .consultation-img-mobile {
+        display: block;
+    }
+    .consultation-component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -40%;
+    }
+    .consultation-component img {
+        width: 100%;
+        height: auto;
+        border-radius: 0px 100px 0px 0px;
+    }
+    .consultation-component .get-consultatuib-card {
+        position: relative;
+        max-width: 100%;
+        margin: 30% 18px 0 18px;
+        border-radius: 0;
+    }
+    .consultation-component .get-consultatuib-card .card-body {
+        padding: 34px 32px 54px 32px;
+        height: auto;
+    }
+    .card-title {
+        max-width: 528px;
+        font-size: 36px;
+    }
+    .get-consultatuib-card label {
+        font-size: 16px;
+    }
+    .get-consultatuib-card input, textarea {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .get-consultatuib-card textarea {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .get-consultatuib-card .form-check label {
+        max-width: 512px;
+        padding-left: 16px;
+    }
+    .consultation-button {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+    .arrow-button {
+        display: flex;
+        justify-content: center;
+        padding: 15px 40px;
+        width: 100%;
     }
 }
 </style>

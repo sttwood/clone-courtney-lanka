@@ -35,7 +35,7 @@
     <HomeHowToStart />
   </section>
 
-  <section class="homepage-expertise container-fluid" style="padding: 16px;">
+  <section class="homepage-expertise container-fluid">
     <HomeExpertise />
   </section>
 
@@ -43,7 +43,7 @@
     <HomeSpeacialized />
   </section>
 
-  <section class="homepage-carousel container-fluid">
+  <section class="homepage-carousel homepage-carousel-tech container-fluid">
     <HomeTechsCarousel />
   </section>
 
@@ -121,5 +121,11 @@
 }
 .homepage-carousel-client {
   background: #F8F8F8;
+}
+@media (max-width: 768px) {
+  .homepage-carousel-client {
+    background: #ffffff;
+    padding: 0;
+  }
 }
 </style>

@@ -11,7 +11,7 @@
     <section class="careers-list container-fluid">
         <h3>Developers</h3>
         <article class="careers-item table-responsive">
-            <table class="table">
+            <table class="table table-vertical">
                 <thead>
                     <tr>
                         <th scope="col" class="thead-role">ROLE</th>
@@ -60,7 +60,7 @@
         </article>
     </section>
 
-    <ConsoltationComponent style="margin-top: 590px;" />
+    <ConsoltationComponent />
 </template>
 
 <script>
@@ -79,6 +79,9 @@ export default {
 </script>
 
 <style scoped>
+.careers-list {
+    margin-bottom: 590px;
+}
 .careers-list h3 {
     font-size: 28px;
     font-weight: 600;
@@ -291,5 +294,16 @@ export default {
         padding: 15px 20px;
         font-size: 10px;
     }
+}
+@media (max-width: 768px) {
+    /* .table-vertical th, .table-vertical td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    } */
+    .careers-list {
+        margin-bottom: 190px;
+    }
+
 }
 </style>

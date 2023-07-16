@@ -1,29 +1,73 @@
 <template>
-    <article
-        v-for="({ imgUrl, title, desc }, index) in data"
-        :key="index"
-        class="article-2col flex-row d-flex"
-    >
-        <img class="col" :alt="title" :src="imgUrl" />
-        <div class="col p-0">
-            <h3>{{ title }}</h3>
-            <p>{{ desc }}</p>
-        </div>
-    </article>
+    <section class="article-desktop d-flex">
+        <article
+            v-for="({ imgUrl, title, desc }, index) in data"
+            :key="index"
+            class="article-2col flex-row d-flex"
+        >
+            <img class="col" :alt="title" :src="imgUrl" />
+            <div class="col p-0">
+                <h3>{{ title }}</h3>
+                <p>{{ desc }}</p>
+            </div>
+        </article>
+    </section>
+
+    <Carousel v-bind="settings" class="article-carousel-mobile">
+        <Slide
+            v-for="({ imgUrl, title, desc }, index) in data"
+            :key="index"
+        >
+            <article
+                class="article-2col d-flex flex-column"
+            >
+                <div class="d-flex justify-content-center">
+                    <img :alt="title" :src="imgUrl" />
+                </div>
+                <div class="article-mobile-content p-0">
+                    <h3>{{ title }}</h3>
+                    <p>{{ desc }}</p>
+                </div>
+            </article>
+        </Slide>
+        <template #addons>
+            <Pagination />
+        </template>
+    </Carousel>
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
+export default defineComponent ({
+    name: 'ArticleComponent',
     props: {
         data: {
             type: Array,
             required: true
         }
     },
-};
+    components: {
+        Pagination,
+        Carousel,
+        Slide,
+    },
+    data: () => ({
+        // carousel settings
+        settings: {
+            itemsToShow: 1,
+            snapAlign: 'center',
+        },
+    }),
+});
 </script>
 
 <style>
+.article-carousel-mobile {
+    display: none;
+}
 .article-2col {
     color: #16205F;
     gap: 25px;
@@ -100,6 +144,44 @@ export default {
 
     .article-2col {
         gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .article-carousel-mobile {
+        display: block;
+        width: 100%;
+    }
+    .article-2col {
+        gap: 38px;
+    }
+    .article-carousel-mobile .article-2col img {
+        max-width: 124px;
+        max-height: 124px;
+        width: 100%;
+        height: auto;
+    }
+    .article-carousel-mobile .article-2col .article-mobile-content {
+        text-align: start;
+    }
+    .article-carousel-mobile .article-2col .article-mobile-content h3 {
+        font-size: 28px;
+    }
+    .article-carousel-mobile .article-2col .article-mobile-content p {
+        font-size: 16px;
+    }
+    .carousel__pagination {
+        padding: 0;
+    }
+    .carousel__pagination-button::after {
+        width: 48px;
+        height: 7px;
+        background: #E1E1E1;
+    }
+    .carousel__pagination-button--active::after {
+        background: #9F9F9F;
+    }
+    .article-desktop {
+        display: none !important;
     }
 }
 </style>

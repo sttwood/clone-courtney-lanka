@@ -5,7 +5,7 @@
             <h2>Specialized Staff We Provide</h2>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="hompage-specialized-desktop row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
             <div class="card" v-for="({title, svgUrl}, index) in listOfCard" :key="index">
                 <img :src="svgUrl" :alt="title" width="52" />
                 <h5>{{ title }}</h5>
@@ -13,11 +13,36 @@
             </div>
             
         </div>
+
+        <div class="hompage-specialized-mobile">
+            <Carousel class="homepage-specialized-carousel-mobile">
+                <Slide
+                    v-for="(chunk, index) in splitArrays"
+                    :key="index"
+                >
+                    <div 
+                        class="card"
+                        v-for="({ title, svgUrl }, index) in chunk"
+                        :key="index"
+                    >
+                        <img :src="svgUrl" :alt="title" width="52" />
+                        <h5>{{ title }}</h5>
+                        <span class="specialized-highlight"></span>
+                    </div>
+                </Slide>
+                <template #addons>
+                    <Pagination />
+                </template>
+            </Carousel>
+        </div>
     </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
+// Owl carousel
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
 //Images
 import FrontendImg from "@/assets/svg/frontend.svg"
 import FullstackImg from "@/assets/svg/software-application.svg"
@@ -41,10 +66,37 @@ import TeamleadImg from "@/assets/svg/team-leader.svg"
 import GolangImg from "@/assets/svg/Go-Logo_Black.svg"
 
 
-
 export default defineComponent ({
+    name: 'HomeSpecializedComponent',
+    props: {
+        data: {
+            type: Array,
+            required: true
+        }
+    },
+    components: {
+        Pagination,
+        Carousel,
+        Slide,
+    },
+    mounted() {
+        // Splitting the original array into smaller arrays
+        const listOfArray = this.listOfCard
+
+        const chunkSize = 5;
+
+        for (let i = 0; i < listOfArray.length; i += chunkSize) {
+            const chunk = listOfArray.slice(i, i + chunkSize);
+            this.splitArrays.push(chunk);
+        }
+    },
     data() {
         return {
+            settings: {
+                itemsToShow: 2,
+                snapAlign: 'start',
+            },
+            splitArrays: [], // Contains the smaller arrays (each with 5 objects)
             listOfCard: [
                 {
                     "title": "Frontend Engineers",
@@ -133,6 +185,9 @@ export default defineComponent ({
 </script>
 
 <style>
+.hompage-specialized-mobile {
+    display: none;
+}
 .homepage-speacialized {
     padding-top: 90px;
     padding-bottom: 110px;
@@ -154,6 +209,7 @@ export default defineComponent ({
     padding: 20px 30px;
     width: 344px;
     max-height: 92px;
+    height: 100%;
 }
 .homepage-speacialized .card img {
     margin-right: 40px;
@@ -176,7 +232,6 @@ export default defineComponent ({
 .homepage-head-title h2 {
     max-width: 485px;
 }
-
 @media (max-width: 1802px) {
     .homepage-speacialized h5 {
         font-size: 16px;
@@ -187,7 +242,6 @@ export default defineComponent ({
         max-height: 92px;
     }
 }
-
 @media (max-width: 1702px) {
     .homepage-speacialized h5 {
         font-size: 14px;
@@ -198,7 +252,6 @@ export default defineComponent ({
         max-height: 92px;
     }
 }
-
 @media (max-width: 1602px) {
     .homepage-speacialized .card {
         padding: 20px 20px 20px 30px;
@@ -206,7 +259,6 @@ export default defineComponent ({
         max-height: 92px;
     }
 }
-
 @media (max-width: 1502px) {
     .homepage-speacialized .card {
         padding: 20px 20px 20px 30px;
@@ -218,6 +270,26 @@ export default defineComponent ({
     }
     .homepage-speacialized .card img {
         margin-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .homepage-speacialized .container-fluid {
+        width: 100%;
+        padding: 0 18px;
+    }
+    .hompage-specialized-desktop {
+        display: none;
+    }
+    .hompage-specialized-mobile {
+        display: block;
+    }
+    .hompage-specialized-mobile .carousel__slide {
+        flex-direction: column;
+        list-style: none;
+        gap: 27px;
+    }
+    .hompage-specialized-mobile .carousel__slide .card {
+        width: 95%;
     }
 }
 </style>

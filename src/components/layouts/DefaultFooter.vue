@@ -79,7 +79,7 @@ export default {
         <hr class="footer-line" />
 
         <section class="container-fluid">
-            <p><em>© 2022 sttwood</em></p>
+            <p>© 2022 sttwood</p>
         </section>
     </footer>
 </template>
@@ -87,6 +87,7 @@ export default {
 <style scoped>
 footer {
     border-top: 1px solid #E1E1E1;
+    color: #16205F;
     font-size: 18px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -94,21 +95,17 @@ footer {
     padding-top: 30px;
     width: 100%;
 }
-
 footer .container-fluid {
     width: 80%;
     padding: 0;
 }
-
 .footer-line {
     border-top: 1px solid #E1E1E1;
     width: 100%;
 }
-
 .footer-info {
     gap: 30px;
 }
-
 h4 {
     font-weight: 600;
     font-size: 22px;
@@ -119,7 +116,6 @@ h4 {
 .footer-contact-info span {
     gap: 1rem;
 }
-
 .footer-article {
     gap: 25px;
     padding-top: 28px;
@@ -128,16 +124,13 @@ h4 {
     text-decoration: none;
     color: #16205F;
 }
-
 .footer-socials h5 {
     font-size: 18px;
     font-weight: 600;
 }
-
 .footer-socials .socials-list img {
     padding-right: 24px;
 }
-
 @media screen and (max-width: 1090px) {
     footer {
         font-size: 16px;
@@ -159,7 +152,6 @@ h4 {
         padding-right: 18px;
     }
 }
-
 @media screen and (max-width: 1004px) {
     footer {
         font-size: 14px;
@@ -198,10 +190,34 @@ h4 {
         padding-right: 14px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .footer-contact-info-logo {
         max-width: 195px;
+    }
+    h4 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    p, a {
+        font-size: 18px;
+    }
+    .footer-info article {
+        margin-top: 62px;
+    }
+    .footer-socials {
+        margin-top: 90px !important;
+    }
+    .footer-socials h5 {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+    .footer-socials .socials-list {
+        justify-content: space-between;
+    }
+    .footer-socials .socials-list img {
+        width: 46px;
+        height: 46px;
+        padding: 0;
     }
 }
 </style>

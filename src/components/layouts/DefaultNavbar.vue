@@ -12,6 +12,10 @@ export default {
             backdropElements.forEach((backdropElement) => {
                 backdropElement.parentNode.removeChild(backdropElement);
             });
+
+            // Remove the 'overflow' attribute from the body tag
+            document.body.style.overflow = '';
+            document.body.style.padding = 0;
         }
     }
 }

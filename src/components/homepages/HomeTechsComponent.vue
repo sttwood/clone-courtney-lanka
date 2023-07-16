@@ -14,6 +14,10 @@
                     <img :src="slide" :alt="`Image ${index + 1}`" class="pr-2" />
                     </div>
                 </Slide>
+
+                <template #addons>
+                    <Navigation />
+                </template>
             </Carousel>
             <div class="custom-navigation">
                 <img src="../../assets/svg/Chevron-right.svg" @click="nextSlide">
@@ -25,7 +29,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import { Carousel, Slide } from 'vue3-carousel';
+import { Carousel, Slide, Navigation } from 'vue3-carousel';
 
 import ReactSlide from "@/assets/images/react-homepage.png"
 import AngularSlide from "@/assets/images/angular-homepage.png"
@@ -36,6 +40,7 @@ export default defineComponent ({
     components: {
         Carousel,
         Slide,
+        Navigation,
     },
     methods: {
         nextSlide() {
@@ -51,8 +56,8 @@ export default defineComponent ({
                     snapAlign: 'center',
                 },
                 768: {
-                    itemsToShow: 2,
-                    snapAlign: 'center',
+                    itemsToShow: 1,
+                    snapAlign: 'start',
                 },
                 // 1024 and up
                 1120: {
@@ -78,5 +83,18 @@ export default defineComponent ({
 </script>
 
 <style>
-
+.carousel__next, .carousel__prev {
+    display: none;
+}
+@media (max-width: 768px) {
+    .homepage-carousel-tech .carousel-wrapper {
+        padding: 0;
+    }
+    .carousel__next, .carousel__prev {
+        display: flex;
+    }
+    .custom-navigation {
+        display: none;
+    }
+}
 </style>

@@ -9,12 +9,25 @@
             title="Hire Permanent and Remote Developers"
             desc="From full-time remote engineering teams to hourly contractors, work with remote devs as needed"
         />
+
         <div class="services-content">
-            <ArticlesComponent :data="articleRow1" />
+            <article
+                v-for="({ imgUrl, title, desc }, index) in articleAll"
+                :key="index"
+                class="article-2col flex-row d-flex"
+            >
+                <img class="col" :alt="title" :src="imgUrl" />
+                <div class="col p-0">
+                    <h3>{{ title }}</h3>
+                    <p>{{ desc }}</p>
+                </div>
+            </article>
         </div>
-        <div class="services-content">
-            <ArticlesComponent :data="articleRow2" />
+
+        <div class="services-content-mobile">
+            <ArticlesComponent :data="articleAll" />
         </div>
+
     </section>
 
     <ConsultationComponent />
@@ -41,7 +54,7 @@ export default {
     },
     data() {
         return {
-            articleRow1: [
+            articleAll: [
                 {
                     "imgUrl": DedicatedImg,
                     "title": 'Dedicated Teams',
@@ -52,8 +65,6 @@ export default {
                     "title": 'Staff Augmentation',
                     "desc": 'IT Staff Augmentation is a service designed to add extra talent to your team on an on-demand basis. This allows businesses to immediately find the right fit for hard-to-fill or temporary positions, which boosts the scalability and efficiency of project development.'
                 },
-            ],
-            articleRow2: [
                 {
                     "imgUrl": OutsourcingImg,
                     "title": 'Software Outsourcing',
@@ -64,7 +75,7 @@ export default {
                     "title": 'Remote Office',
                     "desc": 'Courtney is a trustworthy partner that can help you open your own remote development center and grow your business from Sri Lanka and United Kingdom.'
                 },
-            ]
+            ],
         }
     },
 }
@@ -72,12 +83,23 @@ export default {
 
 <style scoped>
 .services-container {
-    padding-bottom: 20px;
+    padding-bottom: 100px;
 }
 .services-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    margin-bottom: 70px;
+    width: 100%;
+}
+.services-content-mobile {
+    display: none;
+}
+@media (max-width: 768px) {
+    .services-content {
+        display: none;
+    }
+    .services-content-mobile {
+        display: block;
+    }
 }
 </style>

@@ -1,19 +1,22 @@
 <template>
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">Building dev team, Quickly and Affordably</h1>
-                <p class="card-text">
-                    We specialize in helping you build a team of expert developers, testers, and leaders. We are setup to
-                    deliver long term solutions, or scale to different needs quickly.
-                </p>
-                <button class="arrow-button">
-                    Build a team
-                    <span class="arrow"></span>
-                </button>
+        <img src="../../assets/images/desktop/homepage/header-homepage.png" alt="homepage-header-image" class="img-fluid">
+
+        <div class="homepage-card-content">
+
+            <div class="card">  
+                <div class="card-body">
+                    <h1 class="card-title">Building dev team, Quickly and Affordably</h1>
+                    <p class="card-text">
+                        We specialize in helping you build a team of expert developers, testers, and leaders. We are setup to
+                        deliver long term solutions, or scale to different needs quickly.
+                    </p>
+                    <button class="arrow-button">
+                        Build a team
+                        <span class="arrow"></span>
+                    </button>
+                </div>
             </div>
         </div>
-
-        <img src="../../assets/images/desktop/homepage/header-homepage.png" alt="homepage-header-image" class="img-fluid">
 </template>
 
 <script>
@@ -232,33 +235,49 @@
 /* MOBILE */
 @media (max-width: 768px) {
     .homepage-header {
-        display: flex;
-        flex-direction: column;
-    }
-    .homepage-header .card {
-        color: #16205F;
         position: static;
     }
-    .homepage-header .card-body {
+    .homepage-header.container-fluid {
+        width: 100%;
+        margin: 0;
+        position: static;
+        flex-direction: column;
+    }
+    .homepage-header img {
+        position: static;
+        width: 100%;
+        border-radius: 0px 0px 0px 100px;
+    }
+    .homepage-card-content {
+        width: 100%;
+        padding: 0 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
+    }
+    .homepage-header .card {
+        max-width: none;
+        background: none;
+        position: static;
+        transform: none;
         padding: 0;
+        margin-bottom: 68px;
     }
     .homepage-header .card-title {
-        font-weight: 600;
-        font-size: 64px;
-        /* line-height: 78px; */
+        font-size: 36px;
+        margin-bottom: 21px;
     }
     .homepage-header .card-text {
-        font-size: 24px;
-        /* line-height: 36px; */
+        font-size: 20px;
+        margin-bottom: 28px;
     }
-    .homepage-header .arrow-button {
+    .homepage-header .card .arrow-button {
         font-size: 16px;
-        padding: 15px 30px;
-    }
-    .homepage-header .arrow-button .arrow {
-        width: 10px;
-        height: 10px;
-        margin: 0 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
     }
 }
 

@@ -18,29 +18,29 @@
                 <h2>Why You Need To Hire Remote Developers</h2>
 
                 <ul class="row list-unstyled">
-                    <li class="col">> Talent shortage</li>
-                    <li class="col">> Lack of Expertise</li>
-                    <li class="col">> Quick Kick-Off</li>
-                </ul>
-                <ul class="row list-unstyled">
-                    <li class="col">> Cost Optimization</li>
-                    <li class="col">> Talent Accessibility</li>
-                    <li class="col">> Administrative Hassle</li>
+                    <li class="col-xs-12 col-sm-6 col-md-4">> Talent shortage</li>
+                    <li class="col-xs-12 col-sm-6 col-md-4">> Lack of Expertise</li>
+                    <li class="col-xs-12 col-sm-6 col-md-4">> Quick Kick-Off</li>
+                <!-- </ul>
+                <ul class="row list-unstyled"> -->
+                    <li class="col-xs-12 col-sm-6 col-md-4">> Cost Optimization</li>
+                    <li class="col-xs-12 col-sm-6 col-md-4">> Talent Accessibility</li>
+                    <li class="col-xs-12 col-sm-6 col-md-4">> Administrative Hassle</li>
                 </ul>
         </div>
 
-        <div class="howtostart-banner">
-            <img 
-                src="@/assets/images/desktop/howtostart/how-to-start-page.png" 
-                alt="count-of-dev"
-                class="img-fluid"
-            >
-            <span>
-                <h2>1000+</h2>
-                <h3>Developers</h3>
-            </span>
-        </div>
     </section>
+    <div class="howtostart-banner">
+        <img 
+            src="@/assets/images/desktop/howtostart/how-to-start-page.png" 
+            alt="count-of-dev"
+            class="img-fluid"
+        >
+        <span>
+            <h2>1000+</h2>
+            <h3>Developers</h3>
+        </span>
+    </div>
 
     <ConsultationComponent />
 </template>
@@ -105,9 +105,6 @@ export default {
     gap: 50px;
     margin: 106px 0 134px 0;
 }
-.howtostart-whyremotedev {
-    margin-bottom: 155px;
-}
 .howtostart-whyremotedev h2 {
     max-width: 650px;
     font-size: 46px;
@@ -117,10 +114,12 @@ export default {
 .howtostart-whyremotedev li {
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 39px;
 }
 .howtostart-banner {
     position: relative;
-    margin-bottom: 174px;
+    width: 80%;
+    margin: 174px auto;
 }
 .howtostart-banner img {
     width: 100%;
@@ -189,6 +188,21 @@ export default {
     }
     .howtostart-banner span h3 {
         font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .howtostart-getstart h1, .howtostart-whyremotedev h2 {
+        font-size: 36px;
+    }
+    .howtostart-banner {
+        width: 100%;
+        margin: 124px auto;
+    }
+    .howtostart-banner span h2 {
+        font-size: 36px;
+    }
+    .howtostart-banner span h3 {
+        font-size: 18px;
     }
 }
 </style>

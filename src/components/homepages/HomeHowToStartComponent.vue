@@ -4,9 +4,7 @@
             <h5>How to Start</h5>
             <h2>Easy Process</h2>
             <p>
-                We specialize in helping you build a team of
-                <br />
-                expert developers, testers, and leaders.
+                We specialize in helping you build a team of expert developers, testers, and leaders.
             </p>
         </div>
 
@@ -133,6 +131,37 @@
 
     .homepage-process-method-title h3 {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-process .homepage-process-title h2 {
+        font-size: 36px;
+        color: #FFFFFF;
+    }
+    .homepage-process .homepage-process-title h5 {
+        font-size: 22px;
+    }
+    .homepage-process .homepage-process-title p {
+        font-size: 16px;
+        max-width: 252px;
+        margin: 0 auto 54px auto;
+    }
+    .homepage-process-methods {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .homepage-process-method {
+        margin-bottom: 75px;
+    }
+    .homepage-process-method-title h2 {
+        font-size: 46px;
+        padding-right: 10px;
+    }
+
+    .homepage-process-method-title h3 {
+        font-size: 28px;
     }
 }
 </style>
