@@ -391,5 +391,20 @@ export default {
 .tab-pane {
     gap: 36px;
 }
-
+@media (max-width: 768px) {
+    .technologies-tabs {
+        display: flex;
+        flex-direction: row;
+    }
+    .technologies-tabs .nav-pills {
+        flex-direction: column;
+    }
+    .technologies-tabs .nav-pills .nav-item .nav-link {
+        margin: 0;
+        width: 90%;
+    }
+    .technologies-tabs .tab-content {
+        margin: 0;
+    }
+}
 </style>
