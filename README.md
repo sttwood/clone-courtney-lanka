@@ -1,14 +1,17 @@
-# software-company-web
+# software-company-web-clone
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my clone project for practicing fundamental Vue.js and responsive website by making a clone website by UI design from Figma community.
 
-## Recommended IDE Setup
+## DEMO
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+https://clone-courtney-lanka.vercel.app/
 
-## Customize configuration
+## Stacks
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Vue.js
+- Vite
+- Bootstrap 5
+- Owl carousel
 
 ## Project Setup
 
@@ -20,16 +23,4 @@ npm install
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
